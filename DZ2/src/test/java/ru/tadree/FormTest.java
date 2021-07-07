@@ -27,18 +27,18 @@ public class FormTest {
         $("#firstName").setValue("Elena");
         $("#lastName").setValue("Nikitina");
         $("#userEmail").setValue("test@test.ru");
-        $(byText("Other")).click();
+        $("#genterWrapper").$(byText("Other")).click();
         $("#userNumber").setValue("0123456789");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("January");
         $(".react-datepicker__year-select").selectOption("2000");
         $(".react-datepicker__day--001").click();
-        $("#subjectsInput").setValue("c").pressEnter();
-        $(byText("Music")).click();
+        $("#subjectsInput").setValue("Physics").pressEnter();
+        $("#hobbiesWrapper").$(byText("Music")).click();
         $("#uploadPicture").uploadFile(new File("src/test/resources/DZ2.png"));
         $("#currentAddress").setValue("test");
-        $("#react-select-3-input").setValue("a").pressEnter();
-        $("#react-select-4-input").setValue("a").pressEnter();
+        $("#react-select-3-input").setValue("Uttar Pradesh").pressEnter();
+        $("#react-select-4-input").setValue("Agra").pressEnter();
 
         $("#submit").scrollTo().click();
 
